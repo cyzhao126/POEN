@@ -2,14 +2,14 @@
 
 ## Introduction
 
-This is the official repository for *SEFN：Segment-aware Evidential Fusion Network for Trustworthy Video Sewer Defect Classification*. In this repository, we release the splits of training set and test set for $\tau_{cls}$ and $\tau_{ood}$, as well as the source code.
+This is the official repository for *Guiding Trustworthy Video Sewer Inspection With Pareto-Optimal Evidential Network*. In this repository, we release the splits of training set and test set for $\tau_{cls}$ and $\tau_{ood}$, as well as the source code.
 
 ## Installation
 
 1、Create conda environment:
 ```
-$ conda create -n SEFN python=3.7
-$ conda activate SEFN
+$ conda create -n POEN python=3.7
+$ conda activate POEN
 ```
 2、This code was implemented with python 3.7, torch 1.10.0+cu113
 ```
@@ -24,11 +24,10 @@ $ pip install -r requirements.txt
 
 For data preparation of VideoPipe, we follow the dataset used in "VideoPipe Challenge @ ICPR2022，Challenge on Real-World Video Understanding for Urban Pipe Inspection" |[pdf](https://arxiv.org/pdf/2210.11158), [github](https://videopipe.github.io/)|. You can use the above official link to download VideoPipe dataset, since the annotations of testing set are not public, we conduct the experiments focused on the training and validation sets. 
 
-
 Our split files for $\tau_{cls}$ and $\tau_{ood}$ are provided in `/data`.
 
 ## Train 
-The implementation of video swin transformer is based on MMAction2 project |[github](https://github.com/open-mmlab/mmaction2)|. The config file of this work could be found at `/configs`, config files show all detailed settings of the model. Some code designed for SEFN are provide in `/mmaction`, which should overwrite its source files after downloading mmaction project.
+The implementation of video swin transformer is based on MMAction2 project |[github](https://github.com/open-mmlab/mmaction2)|. The config file of this work could be found at `/configs`, config files show all detailed settings of the model. Some code designed for POEN are provide in `/mmaction`, which should overwrite its source files after downloading mmaction project.
 
 1. Download the pretrained model from MMAction2 project and put it under the directory `/data`. The model we used is "swin_base_patch244_window877_kinetics600_22k.pth".
 2. Train a model for $\tau_{cls}$ with 2 GPUs, by
