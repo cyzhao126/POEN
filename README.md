@@ -29,6 +29,8 @@ Our split files for $\tau_{cls}$ and $\tau_{ood}$ are provided in `/data`.
 ## Train 
 The implementation of video swin transformer is based on MMAction2 project |[github](https://github.com/open-mmlab/mmaction2)|. The config file of this work could be found at `/configs`, config files show all detailed settings of the model. Some code designed for POEN are provide in `/mmaction`, which should overwrite its source files after downloading mmaction project.
 
+In order to implement pareto optimization for $\tau_{cls}$ and $\tau_{ood}$, we have to modify the "optimizer.py" in "mmcv". We follow the method used in "Multi-Task Learning as Multi-Objective Optimization" |[pdf]([https://arxiv.org/pdf/2210.11158](https://proceedings.neurips.cc/paper/2018/hash/432aca3a1e345e339f35a30c8f65edce-Abstract.html)), [github]([https://videopipe.github.io/](https://github.com/isl-org/MultiObjectiveOptimization))|. Therefore, we provide our "optimizer.py" in `/mmcv` for video sewer inspection, which should overwrite its source files after installing the "mmcv" library.
+
 1. Download the pretrained model from MMAction2 project and put it under the directory `/data`. The model we used is "swin_base_patch244_window877_kinetics600_22k.pth".
 2. Train a model for $\tau_{cls}$ with 2 GPUs, by
 
