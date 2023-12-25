@@ -1,8 +1,8 @@
-# Guiding Trustworthy Video Sewer Inspection With Pareto-Optimal Evidential Network （submitted to ICME 2024）
+# Trustworthy Video Sewer Inspection via Support Clip-based Pareto-optimal Evidential Network （submitted to ICME 2024）
 
 ## Introduction
 
-This is the official repository for *Guiding Trustworthy Video Sewer Inspection With Pareto-Optimal Evidential Network*. In this repository, we release the splits of training set and test set for $\tau_{cls}$ and $\tau_{ood}$, as well as the source code.
+This is the official repository for *Trustworthy Video Sewer Inspection via Support Clip-based Pareto-optimal Evidential Network*. In this repository, we release the splits of training set and test set for $\tau_{cls}$ and $\tau_{ood}$, as well as the source code.
 
 ## Installation
 
