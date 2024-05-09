@@ -1,4 +1,4 @@
-# Trustworthy Video-based Sewer Inspection via Support Clip-based Pareto-optimal Evidential Network （submitted to ICME 2024）
+# Trustworthy Video-based Sewer Inspection via Support Clip-based Pareto-optimal Evidential Network （submitted to SPL）
 
 ## Introduction
 
